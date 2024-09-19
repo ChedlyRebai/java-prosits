@@ -13,18 +13,18 @@ Make sure you have the following installed on your system:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/zoo-management.git
+    git clone https://github.com/ChedlyRebai/java-prosits.git
     ```
 
 2. **Navigate to the project directory**:
     ```bash
-    cd zoo-management
+    cd java-prosits
     ```
 
 3. **Compile the Java file**:
     Use the `javac` command to compile the source file.
     ```bash
-    javac ZooManagement.java
+    javac java-prosits.java
     ```
 
 4. **Run the program**:
