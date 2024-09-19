@@ -1,29 +1,46 @@
-# Project Name
+# Zoo Management - Java Learning Exercise
 
-Brief description of your project.
+This project is a basic Java program that helps users manage a zoo by entering the zoo's name and the number of cages. It is designed as part of an exercise to learn Java programming.
 
-## Table of Contents
+## Prerequisites
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Make sure you have the following installed on your system:
 
-## Installation
+- **Java Development Kit (JDK)**: [Download here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- **A text editor or IDE** (e.g., IntelliJ IDEA, Eclipse, or VS Code)
 
-### Prerequisites
+## Installation and Setup
 
-Ensure you have the following installed:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/zoo-management.git
+    ```
 
-- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version 11 or later)
-- [Maven](https://maven.apache.org/) (for build and dependency management)
+2. **Navigate to the project directory**:
+    ```bash
+    cd zoo-management
+    ```
 
-### Steps
+3. **Compile the Java file**:
+    Use the `javac` command to compile the source file.
+    ```bash
+    javac ZooManagement.java
+    ```
 
-1. Clone the repository:
+4. **Run the program**:
+    After compiling, run the program with the `java` command:
+    ```bash
+    java ZooManagement
+    ```
 
-   ```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
+## How It Works
+
+Once the program starts, it will prompt you to enter:
+
+1. The name of the zoo.
+2. The number of cages.
+
+The program will then display a message indicating how many cages the zoo has. If the input for the number of cages is invalid, it will keep asking until a valid number is entered.
+
+## Example Output
+
