@@ -30,7 +30,7 @@ Make sure you have the following installed on your system:
 4. **Run the program**:
     After compiling, run the program with the `java` command:
     ```bash
-    java ZooManagement
+    java java-prosits
     ```
 
 ## How It Works
