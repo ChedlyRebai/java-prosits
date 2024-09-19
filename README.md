@@ -1,6 +1,7 @@
 # Zoo Management - Java Learning Exercise
 
 This project is a basic Java program that helps users manage a zoo by entering the zoo's name and the number of cages. It is designed as part of an exercise to learn Java programming.
+![Java Logo](https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg) <!-- Optional: Replace with a valid image link -->
 
 ## Prerequisites
 
@@ -41,6 +42,4 @@ Once the program starts, it will prompt you to enter:
 2. The number of cages.
 
 The program will then display a message indicating how many cages the zoo has. If the input for the number of cages is invalid, it will keep asking until a valid number is entered.
-
-## Example Output
 
