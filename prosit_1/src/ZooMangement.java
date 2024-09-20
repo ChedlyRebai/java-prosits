@@ -7,7 +7,7 @@ public class ZooMangement {
         //String zooName="my zoo";
         // System.out.println(String.format("%s comporte %d cages ", zooName,nbrCages));
         //result: my zoo comporte 20 cages
-        
+
         //Instruction 2
         Scanner sc=new Scanner(System.in);
         System.out.println("Entrez le nom du zoo:");
