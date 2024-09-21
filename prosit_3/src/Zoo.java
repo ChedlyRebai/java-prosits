@@ -4,6 +4,7 @@ public class Zoo {
     private String city;
     private int nbrCages;
     private int newwint = 0;
+    
 
     public Zoo(Animal[] animals, String name, String city, int nbrCages) {
         this.animals = new Animal[nbrCages];
@@ -109,7 +110,7 @@ public class Zoo {
 
         return z2;
     }
-    
+
     public boolean addAnimal(Animal newAnimal) {
         if (isTheAnimalIsTheSame(newAnimal)) {
             System.out.println("noo");
