@@ -35,6 +35,14 @@ public class Main {
         myZoo.removeAnimal(elephant);
         myZoo.addAnimal(lion);
         myZoo.displayAnimals();
+
+        boolean zooIsFull=myZoo.isZooFull();
+        if(zooIsFull){
+            System.out.println("is full");
+        }else{
+            System.out.println("is not full");
+        }
+        
         if (index == (-1)) {
             System.out.println("not found");
         } else {

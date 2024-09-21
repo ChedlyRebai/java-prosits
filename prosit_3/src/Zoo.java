@@ -56,7 +56,7 @@ public class Zoo {
         return false;
     }
 
-    boolean removeAnimal(Animal animal) {
+    public boolean removeAnimal(Animal animal) {
         int indexOfAnimal = searchAnimal(animal);
         if (indexOfAnimal != (-1)) {
             for (int i = indexOfAnimal; i < newwint - 1; i++) {
@@ -71,6 +71,19 @@ public class Zoo {
 
         }
         return false;
+    }
+
+    public boolean isZooFull(){
+
+        int i=0;
+        for (Animal animal : animals) {
+            if(animal==null){
+                break;
+            }
+            i++;
+            
+        }
+        return (i== this.animals.length-1);
     }
 
     public boolean addAnimal(Animal newAnimal) {
