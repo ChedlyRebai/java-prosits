@@ -24,6 +24,7 @@ public class Main {
 
         Animal[] animals = {};
         Zoo myZoo = new Zoo(animals, zooName, city, nbrcages);
+        Zoo zoo2 =new Zoo(animals, zooName, city, nbrcages);
         System.out.println("zoo animals");
         System.out.println(myZoo.addAnimal(tiger) ? "ee" : "e");
         
@@ -31,7 +32,7 @@ public class Main {
         myZoo.addAnimal(elephant);
         myZoo.addAnimal(giraffe);
         int index = myZoo.searchAnimal(lion);
-        
+        zoo2.addAnimal(giraffe);
         myZoo.removeAnimal(elephant);
         myZoo.addAnimal(lion);
         myZoo.displayAnimals();
@@ -48,6 +49,9 @@ public class Main {
         } else {
             System.out.println("found at index:" + index);
         }
+
+        Zoo BigZoo=zoo2.comparerZoo(myZoo, zoo2);
+        System.out.println("biggest Zoo: "+ BigZoo.getName());
 
         sc.close();
 
