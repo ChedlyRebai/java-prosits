@@ -37,8 +37,26 @@ public class Zoo {
         return -1;
     }
 
-    public boolean addAnimal(Animal newAnimal) {
+    public boolean isTheAnimalIsTheSame(Animal newAnimal) {
+        for (Animal animal : animals) {
+            if (animal == null) {
+                break;
+            }
+            if (animal.equals(newAnimal)) {
+                
+                return true;
+            }
 
+        }
+
+        return false;
+    }
+
+    public boolean addAnimal(Animal newAnimal) {
+        if (isTheAnimalIsTheSame(newAnimal)) {
+            System.out.println("noo");
+            return false;
+        }
         if (newwint < nbrCages) {
             animals[newwint] = newAnimal;
             newwint++;

@@ -27,6 +27,7 @@ public class Main {
         System.out.println("zoo animals");
         System.out.println(myZoo.addAnimal(tiger) ? "ee" : "e");
         myZoo.addAnimal(lion);
+        myZoo.addAnimal(lion);
         myZoo.addAnimal(elephant);
         myZoo.addAnimal(giraffe);
         int index = myZoo.searchAnimal(lion);
