@@ -31,10 +31,14 @@ public class Zoo {
     }
 
     public int searchAnimal(Animal newAnimal){
+        int index=0;
         for (Animal animal : animals) {
+
             (animal.getName()).equals(newAnimal.getName());
+            index++;
+            break;
         }
-        return 0;
+        return index;
     }
 
     public boolean addAnimal(Animal newAnimal) {
