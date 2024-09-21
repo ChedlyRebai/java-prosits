@@ -1,9 +1,9 @@
 public class Zoo {
-    Animal[] animals;
-    String name;
-    String city;
-    int nbrCages;
-    int newwint = 0;
+    private Animal[] animals;
+    private String name;
+    private String city;
+    private int nbrCages;
+    private int newwint = 0;
 
     public Zoo(Animal[] animals, String name, String city, int nbrCages) {
         this.animals = new Animal[nbrCages];
@@ -32,7 +32,7 @@ public class Zoo {
 
     public int searchAnimal(Animal newAnimal){
         for (Animal animal : animals) {
-            (animal.getName()).equals(newAnimal.getName())
+            (animal.getName()).equals(newAnimal.getName());
         }
         return 0;
     }
