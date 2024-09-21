@@ -14,4 +14,6 @@ public class Animal {
     public String displayAnimal() {
         return "family:" + family + "\n name:" + name + "\nage:" + age + "\n mamal:" + (isMammal ? " yes" : " no");
     }
+
+    
 }
