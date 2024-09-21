@@ -67,4 +67,46 @@ public class Zoo {
          * }
          */
     }
+
+    public Animal[] getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(Animal[] animals) {
+        this.animals = animals;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getNbrCages() {
+        return nbrCages;
+    }
+
+    public void setNbrCages(int nbrCages) {
+        this.nbrCages = nbrCages;
+    }
+
+    public int getNewwint() {
+        return newwint;
+    }
+
+    public void setNewwint(int newwint) {
+        this.newwint = newwint;
+    }
+
+    
 }
