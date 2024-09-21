@@ -28,7 +28,7 @@ public class Main {
         myZoo.addAnimal(lion);
         myZoo.addAnimal(lion);
         int index=myZoo.searchAnimal(tiger);
-        if(index==0){
+        if(index==(-1)){
             System.out.println("not found");
         }else{
             System.out.println("found at index:"+index);

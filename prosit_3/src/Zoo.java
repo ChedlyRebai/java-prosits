@@ -33,12 +33,12 @@ public class Zoo {
     public int searchAnimal(Animal newAnimal){
         int index=0;
         for (Animal animal : animals) {
-
-            (animal.getName()).equals(newAnimal.getName());
+            if((animal.getName()).equals(newAnimal.getName())){
+                return index;
+            }
             index++;
-            break;
         }
-        return index;
+        return -1;
     }
 
     public boolean addAnimal(Animal newAnimal) {
