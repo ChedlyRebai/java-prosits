@@ -23,12 +23,6 @@ public class Animal {
         return "family:" + family + "\n name:" + name + "\nage:" + age + "\n mamal:" + (isMammal ? " yes" : " no");
     }
 
-
-    public int searchAnimal(Animal animal){
-        
-        return 0;
-    }
-
     public String getFamily() {
         return family;
     }
@@ -61,5 +55,4 @@ public class Animal {
         this.isMammal = isMammal;
     }
 
-    
 }

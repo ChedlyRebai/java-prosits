@@ -30,6 +30,13 @@ public class Zoo {
         }
     }
 
+    public int searchAnimal(Animal newAnimal){
+        for (Animal animal : animals) {
+            (animal.getName()).equals(newAnimal.getName())
+        }
+        return 0;
+    }
+
     public boolean addAnimal(Animal newAnimal) {
 
         if (newwint < nbrCages) {
