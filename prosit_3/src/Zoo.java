@@ -86,6 +86,29 @@ public class Zoo {
         return (i== this.animals.length-1);
     }
 
+    public int animalsNumber(){
+        int i=0;
+        for (Animal animal : animals) {
+            if(animal==null){
+                break;
+            }
+            i++;
+            
+        }
+        return i;
+    }
+
+    public Zoo comparerZoo(Zoo z1, Zoo z2){
+        if(z1.animalsNumber()>z2.animalsNumber()){
+            return z1;
+        }
+        if(z2.animalsNumber()>z1.animalsNumber()){
+            return z2;
+        }
+
+        //if they are the same
+        return null;
+    }
     public boolean addAnimal(Animal newAnimal) {
         if (isTheAnimalIsTheSame(newAnimal)) {
             System.out.println("noo");
