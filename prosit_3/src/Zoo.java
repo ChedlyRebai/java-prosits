@@ -4,7 +4,6 @@ public class Zoo {
     private String city;
     private int nbrCages;
     private int newwint = 0;
-    
 
     public Zoo(Animal[] animals, String name, String city, int nbrCages) {
         this.animals = new Animal[nbrCages];
@@ -74,38 +73,38 @@ public class Zoo {
         return false;
     }
 
-    public boolean isZooFull(){
+    public boolean isZooFull() {
 
-        int i=0;
+        int i = 0;
         for (Animal animal : animals) {
-            if(animal==null){
+            if (animal == null) {
                 break;
             }
             i++;
-            
+
         }
-        return (i== this.animals.length-1);
+        return (i == this.animals.length - 1);
     }
 
-    public int animalsNumber(){
-        int i=0;
+    public int animalsNumber() {
+        int i = 0;
         for (Animal animal : animals) {
-            if(animal==null){
+            if (animal == null) {
                 break;
             }
             i++;
-            
+
         }
         return i;
     }
 
-    public Zoo comparerZoo(Zoo z1, Zoo z2){
-        if(z1.animalsNumber()>=z2.animalsNumber()){
+    public Zoo comparerZoo(Zoo z1, Zoo z2) {
+        if (z1.animalsNumber() >= z2.animalsNumber()) {
             return z1;
         }
 
         // if(z2.animalsNumber()>z1.animalsNumber()){
-        //     return z2;
+        // return z2;
         // }
 
         return z2;
