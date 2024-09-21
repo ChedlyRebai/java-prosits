@@ -1,15 +1,33 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String zooName = "esprit";
+        String city = "tunis";
+        int nbrcages = 3;
+        Scanner sc = new Scanner(System.in);
+        Animal lion = new Animal("lion", "Lion", 3, true);
+        Animal tiger = new Animal("tiger", "Tiger", 4, true);
+        // System.out.println("enter a valid number and must be less than 25:");
+        /*
+         * while(!sc.hasNextInt() || sc.nextInt() > 25){
+         * System.out.println("enter a valid number and must be less than 25:");
+         * sc.next();
+         * }
+         * 
+         * nbrcages=sc.nextInt();
+         */
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Animal[] animals = {};
+        Zoo myZoo = new Zoo(animals, zooName, city, nbrcages);
+        System.out.println("zoo animals");
+        System.out.println(myZoo.addAnimal(tiger) ? "ee":"e" );
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(lion);
+        myZoo.displayAnimals();
+
     }
 }
