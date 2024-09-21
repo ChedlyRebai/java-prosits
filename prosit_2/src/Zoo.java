@@ -18,10 +18,7 @@ public class Zoo {
         }
     }
 
-    public int searchAnimal(Animal animal){
-        
-        return 0;
-    }
+    
 
 
 }
