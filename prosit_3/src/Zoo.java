@@ -68,7 +68,7 @@ public class Zoo {
                 animals[indexOfAnimal] = null;
             }
             newwint--;
-
+            return true;
         }
         return false;
     }

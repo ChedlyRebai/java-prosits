@@ -26,14 +26,22 @@ public class Main {
         Zoo myZoo = new Zoo(animals, zooName, city, nbrcages);
         Zoo zoo2 =new Zoo(animals, zooName, city, nbrcages);
         System.out.println("zoo animals");
-        System.out.println(myZoo.addAnimal(tiger) ? "ee" : "e");
+        System.out.println(myZoo.addAnimal(tiger) ? tiger.getName()+" added succefully " : "error");
+        System.out.println(myZoo.addAnimal(elephant) ? elephant.getName()+" added succefully " : "error");
+        System.out.println(myZoo.addAnimal(giraffe) ? giraffe.getName()+" added succefully " : "error");
+        System.out.println(myZoo.addAnimal(lion) ? lion.getName()+" added succefully " : "error");
         
-        //myZoo.addAnimal(lion);
-        myZoo.addAnimal(elephant);
-        myZoo.addAnimal(giraffe);
+       
         int index = myZoo.searchAnimal(lion);
         zoo2.addAnimal(giraffe);
-        myZoo.removeAnimal(elephant);
+        
+        boolean animalRemoved=myZoo.removeAnimal(elephant);
+        if(animalRemoved){
+            System.out.println("animal removed");
+        }else{
+            System.out.println("animal not removed");
+        }
+
         myZoo.addAnimal(lion);
         myZoo.displayAnimals();
 
