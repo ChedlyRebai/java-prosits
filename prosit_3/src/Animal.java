@@ -1,3 +1,4 @@
+
 public class Animal {
     String family;
     String name;
@@ -9,6 +10,13 @@ public class Animal {
         this.name = name;
         this.age = age;
         this.isMammal = isMammal;
+    }
+
+    public boolean isEmpty() {
+        if (name.isEmpty()) {
+            return true;
+        }
+        return false;
     }
 
     public String displayAnimal() {
