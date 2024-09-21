@@ -15,8 +15,11 @@ public class Zoo {
     public void displayAnimals() {
 
         System.out.print("zoo name: " + name + "\n city: " + city + " \nnb cages:" + nbrCages + "\n");
+
         for (Animal animal : animals) {
             if (animal != null) {
+
+                // System.out.println("index of display animals: "+i);
                 System.out.println(animal.displayAnimal());
             }
 
@@ -29,6 +32,10 @@ public class Zoo {
     public int searchAnimal(Animal newAnimal) {
         int index = 0;
         for (Animal animal : animals) {
+            if (animal == null) {
+                break;
+            }
+
             if ((animal.getName()).equals(newAnimal.getName())) {
                 return index;
             }
@@ -43,12 +50,26 @@ public class Zoo {
                 break;
             }
             if (animal.equals(newAnimal)) {
-                
                 return true;
             }
+        }
+        return false;
+    }
+
+    boolean removeAnimal(Animal animal) {
+        int indexOfAnimal = searchAnimal(animal);
+        if (indexOfAnimal != (-1)) {
+            for (int i = indexOfAnimal; i < newwint - 1; i++) {
+                animals[i] = animals[i + 1];
+                animals[i + 1] = null;
+            }
+
+            if (indexOfAnimal == (newwint - 1)) {
+                animals[indexOfAnimal] = null;
+            }
+            newwint--;
 
         }
-
         return false;
     }
 

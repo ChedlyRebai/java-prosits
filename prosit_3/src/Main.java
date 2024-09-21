@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String zooName = "esprit";
         String city = "tunis";
-        int nbrcages = 3;
+        int nbrcages = 4;
         Scanner sc = new Scanner(System.in);
         Animal lion = new Animal("lion", "Lion", 3, true);
         Animal tiger = new Animal("tiger", "Tiger", 4, true);
@@ -26,11 +26,15 @@ public class Main {
         Zoo myZoo = new Zoo(animals, zooName, city, nbrcages);
         System.out.println("zoo animals");
         System.out.println(myZoo.addAnimal(tiger) ? "ee" : "e");
-        myZoo.addAnimal(lion);
-        myZoo.addAnimal(lion);
+        
+        //myZoo.addAnimal(lion);
         myZoo.addAnimal(elephant);
         myZoo.addAnimal(giraffe);
         int index = myZoo.searchAnimal(lion);
+        
+        myZoo.removeAnimal(elephant);
+        myZoo.addAnimal(lion);
+        myZoo.displayAnimals();
         if (index == (-1)) {
             System.out.println("not found");
         } else {
