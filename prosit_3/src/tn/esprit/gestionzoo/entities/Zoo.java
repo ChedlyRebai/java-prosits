@@ -1,3 +1,5 @@
+package tn.esprit.gestionzoo.entities;
+
 public class Zoo {
     private Animal[] animals;
     private String name;
