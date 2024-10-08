@@ -6,6 +6,12 @@ public class Animal {
     private boolean isMammal;
 
     public Animal(String family, String name, int age, boolean isMammal) {
+        if(age<0){
+            throw new Error("age must be positive");
+        }
+        if(name.isEmpty()){
+            throw new Error("name must not be empty");
+        }
         this.family = family;
         this.name = name;
         this.age = age;
@@ -13,10 +19,7 @@ public class Animal {
     }
 
     public boolean isEmpty() {
-        if (name.isEmpty()) {
-            return true;
-        }
-        return false;
+        return this.name.isEmpty();
     }
 
     public String displayAnimal() {
@@ -36,6 +39,9 @@ public class Animal {
     }
 
     public void setName(String name) {
+        if(name.isEmpty()){
+            throw new Error("name must not be empty");
+        }
         this.name = name;
     }
 
@@ -44,6 +50,9 @@ public class Animal {
     }
 
     public void setAge(int age) {
+        if(age<0){
+            throw new Error("age must be positive");
+        }
         this.age = age;
     }
 

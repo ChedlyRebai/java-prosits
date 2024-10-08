@@ -43,6 +43,7 @@ public class Main {
         }
 
         myZoo.addAnimal(lion);
+        
         myZoo.displayAnimals();
 
         boolean zooIsFull=myZoo.isZooFull();
