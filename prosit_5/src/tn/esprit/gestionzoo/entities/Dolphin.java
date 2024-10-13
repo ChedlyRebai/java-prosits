@@ -20,6 +20,6 @@ public class Dolphin extends Aquatic {
 
     @Override    
     public String toString() {
-        return "";
+        return super.toString() + " swiming speed "+ this.swimmingSpeed;
     }
 }
