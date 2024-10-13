@@ -22,7 +22,7 @@ public class Zoo {
             if (animal != null) {
 
                 // System.out.println("index of display animals: "+i);
-                System.out.println(animal.displayAnimal());
+                System.out.println(animal.toString());
             }
 
             if (animal == null) {

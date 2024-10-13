@@ -22,8 +22,9 @@ public class Animal {
     public boolean isEmpty() {
         return this.name.isEmpty();
     }
-
-    public String displayAnimal() {
+    
+    @Override
+    public String toString() {
         return "family:" + family + "\n name:" + name + "\nage:" + age + "\n mamal:" + (isMammal ? " yes" : " no");
     }
 
