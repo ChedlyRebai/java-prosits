@@ -18,5 +18,8 @@ public class Dolphin extends Aquatic {
         this.swimmingSpeed=swimmingSpeed;
     }
 
-    
+    @Override    
+    public String toString() {
+        return "";
+    }
 }
