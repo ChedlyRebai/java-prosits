@@ -16,6 +16,9 @@ public class Aquatic extends Animal {
         return this.habitat;
     }
 
-    
+    @Override    
+    public String toString() {
+        return "";
+    }
     
 }
