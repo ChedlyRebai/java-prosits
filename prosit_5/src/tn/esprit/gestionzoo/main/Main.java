@@ -1,6 +1,7 @@
 package tn.esprit.gestionzoo.main;
 import java.util.Scanner;
 import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.Aquatic;
 import tn.esprit.gestionzoo.entities.Dolphin;
 import tn.esprit.gestionzoo.entities.Penguin;
 import tn.esprit.gestionzoo.entities.Zoo;
@@ -69,6 +70,9 @@ public class Main {
 
 //Prosit-5 update
         System.out.println("----------------------PROSIT-5---------------------------------");
+        
+        Aquatic aquatic = new Aquatic("shark", "Shark", 5, false, "ocean");
+        System.out.println(aquatic.toString());
         
         Dolphin dolphin = new Dolphin("dolphin", "Dolphin", 2, true, city, 10);
         System.out.println(dolphin.toString());
