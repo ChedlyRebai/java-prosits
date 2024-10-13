@@ -67,15 +67,16 @@ public class Main {
 
         sc.close();
 
-
-
-        //Prosit-5 update
+//Prosit-5 update
+        System.out.println("----------------------PROSIT-5---------------------------------");
+        
         Dolphin dolphin = new Dolphin("dolphin", "Dolphin", 2, true, city, 10);
         System.out.println(dolphin.toString());
 
         Penguin penguin = new Penguin("penguin", "Penguin", 1, true, city, 5);
         System.out.println(penguin.toString());
-        
+
+
 
     }
 }
