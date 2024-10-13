@@ -113,21 +113,23 @@ public class Zoo {
     }
 
     public boolean addAnimal(Animal newAnimal) {
-         if (isTheAnimalIsTheSame(newAnimal)) {
-        System.out.println("noo");
-        return false;
-    }
+        if (isTheAnimalIsTheSame(newAnimal)) {
+            System.out.println("noo");
+            return false;
+        }
 
-    if (!this.isZooFull()) {
-        animals[newwint] = newAnimal;
-        newwint++;
-        return true;
-    }
-        /*if (newwint < nbrCages) {
+        if (!this.isZooFull()) {
             animals[newwint] = newAnimal;
             newwint++;
             return true;
-        }*/
+        }
+        /*
+         * if (newwint < nbrCages) {
+         * animals[newwint] = newAnimal;
+         * newwint++;
+         * return true;
+         * }
+         */
 
         return false;
 

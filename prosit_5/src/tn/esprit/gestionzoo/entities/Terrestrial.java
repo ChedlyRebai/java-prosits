@@ -1,6 +1,6 @@
 
-
 package tn.esprit.gestionzoo.entities;
+
 public class Terrestrial extends Animal {
     protected int nbrLegs;
 
@@ -9,12 +9,11 @@ public class Terrestrial extends Animal {
         this.nbrLegs = nbrLegs;
     }
 
-
-    public void nbrLegs(int nbrLegs){
-        this.nbrLegs=nbrLegs;
+    public void nbrLegs(int nbrLegs) {
+        this.nbrLegs = nbrLegs;
     }
 
-    public int getNbrLegs(){
+    public int getNbrLegs() {
         return this.nbrLegs;
     }
 

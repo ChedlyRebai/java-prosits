@@ -1,4 +1,5 @@
 package tn.esprit.gestionzoo.main;
+
 import java.util.Scanner;
 import tn.esprit.gestionzoo.entities.Animal;
 import tn.esprit.gestionzoo.entities.Aquatic;
@@ -28,59 +29,56 @@ public class Main {
 
         Animal[] animals = {};
         Zoo myZoo = new Zoo(animals, zooName, city, nbrcages);
-        Zoo zoo2 =new Zoo(animals, zooName, city, nbrcages);
+        Zoo zoo2 = new Zoo(animals, zooName, city, nbrcages);
         System.out.println("zoo animals");
-        System.out.println(myZoo.addAnimal(tiger) ? tiger.getName()+" added succefully " : "error");
-        System.out.println(myZoo.addAnimal(elephant) ? elephant.getName()+" added succefully " : "error");
-        System.out.println(myZoo.addAnimal(giraffe) ? giraffe.getName()+" added succefully " : "error");
-        System.out.println(myZoo.addAnimal(lion) ? lion.getName()+" added succefully " : "error");
-        
-       
+        System.out.println(myZoo.addAnimal(tiger) ? tiger.getName() + " added succefully " : "error");
+        System.out.println(myZoo.addAnimal(elephant) ? elephant.getName() + " added succefully " : "error");
+        System.out.println(myZoo.addAnimal(giraffe) ? giraffe.getName() + " added succefully " : "error");
+        System.out.println(myZoo.addAnimal(lion) ? lion.getName() + " added succefully " : "error");
+
         int index = myZoo.searchAnimal(lion);
         zoo2.addAnimal(giraffe);
-        
-        boolean animalRemoved=myZoo.removeAnimal(elephant);
-        if(animalRemoved){
+
+        boolean animalRemoved = myZoo.removeAnimal(elephant);
+        if (animalRemoved) {
             System.out.println("animal removed");
-        }else{
+        } else {
             System.out.println("animal not removed");
         }
 
         myZoo.addAnimal(lion);
-        
+
         myZoo.displayAnimals();
 
-        boolean zooIsFull=myZoo.isZooFull();
-        if(zooIsFull){
+        boolean zooIsFull = myZoo.isZooFull();
+        if (zooIsFull) {
             System.out.println("is full");
-        }else{
+        } else {
             System.out.println("is not full");
         }
-        
+
         if (index == (-1)) {
             System.out.println("not found");
         } else {
             System.out.println("found at index:" + index);
         }
 
-        Zoo BigZoo=zoo2.comparerZoo(myZoo, zoo2);
-        System.out.println("biggest Zoo: "+ BigZoo.getName());
+        Zoo BigZoo = zoo2.comparerZoo(myZoo, zoo2);
+        System.out.println("biggest Zoo: " + BigZoo.getName());
 
         sc.close();
 
-//Prosit-5 update
+        // Prosit-5 update
         System.out.println("----------------------PROSIT-5---------------------------------");
-        
+
         Aquatic aquatic = new Aquatic("shark", "Shark", 5, false, "ocean");
         System.out.println(aquatic.toString());
-        
+
         Dolphin dolphin = new Dolphin("dolphin", "Dolphin", 2, true, city, 10);
         System.out.println(dolphin.toString());
 
         Penguin penguin = new Penguin("penguin", "Penguin", 1, true, city, 5);
         System.out.println(penguin.toString());
-
-
 
     }
 }
