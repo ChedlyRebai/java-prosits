@@ -12,7 +12,7 @@ public class Aquatic extends Animal {
     public void swim(){
         System.out.println("This aquatic animal is swimming. "); 
     }
-    
+
     public void setHabitat(String habitat){
         this.habitat=habitat;
     }
@@ -23,7 +23,7 @@ public class Aquatic extends Animal {
 
     @Override    
     public String toString() {
-        return "";
+        return super.toString() + " habitat: "+ this.habitat;
     }
     
 }
