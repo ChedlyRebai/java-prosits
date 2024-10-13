@@ -2,6 +2,7 @@ package tn.esprit.gestionzoo.main;
 import java.util.Scanner;
 import tn.esprit.gestionzoo.entities.Animal;
 import tn.esprit.gestionzoo.entities.Dolphin;
+import tn.esprit.gestionzoo.entities.Penguin;
 import tn.esprit.gestionzoo.entities.Zoo;
 
 public class Main {
@@ -72,6 +73,8 @@ public class Main {
         Dolphin dolphin = new Dolphin("dolphin", "Dolphin", 2, true, city, 10);
         System.out.println(dolphin.toString());
 
+        Penguin penguin = new Penguin("penguin", "Penguin", 1, true, city, 5);
+        System.out.println(penguin.toString());
         
 
     }
