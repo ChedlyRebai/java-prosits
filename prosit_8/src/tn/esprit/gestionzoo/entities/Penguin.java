@@ -1,5 +1,7 @@
 package tn.esprit.gestionzoo.entities;
 
+import tn.esprit.gestionzoo.enumss.Food;
+
 public class Penguin extends Aquatic {
     protected float swimmingDepth;
 
@@ -23,8 +25,15 @@ public class Penguin extends Aquatic {
 
     @Override
     public void swim() {
-        
-        System.out.println("This aquatic animal is swimming. ");
+        System.out.println("This aquatic animal is swimming.");
     }
 
+    @Override
+    public void eatMeat(Food meat) {
+        if (meat == Food.MEAT) {
+            System.out.println("the penguin is eating meat");
+        } else {
+            System.out.println("the penguin does not eat this type of meat.");
+        }
+    }
 }

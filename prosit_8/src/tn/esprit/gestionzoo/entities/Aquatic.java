@@ -1,6 +1,8 @@
 package tn.esprit.gestionzoo.entities;
 
-public abstract class Aquatic extends Animal {
+import tn.esprit.gestionzoo.interfaces.Carnivore;
+import tn.esprit.gestionzoo.enumss.*;
+public abstract class Aquatic extends Animal implements Carnivore<Food> {
     protected String habitat;
 
     public Aquatic(String family, String name, int age, boolean isMammal, String habitat) {
@@ -37,5 +39,7 @@ public abstract class Aquatic extends Animal {
                 this.getAge() == other.getAge() &&
                 this.habitat.equals(other.habitat);
     }
+
+
 
 }

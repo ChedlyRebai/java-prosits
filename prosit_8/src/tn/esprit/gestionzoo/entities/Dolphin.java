@@ -1,5 +1,7 @@
 package tn.esprit.gestionzoo.entities;
 
+import tn.esprit.gestionzoo.enumss.Food;
+
 public class Dolphin extends Aquatic {
 
     protected float swimmingSpeed;
@@ -25,5 +27,12 @@ public class Dolphin extends Aquatic {
     @Override
     public String toString() {
         return super.toString() + " swiming speed " + this.swimmingSpeed;
+    }
+
+    @Override
+    public void eatMeat(Food meat) {
+      if(meat == Food.BOTH){
+        System.out.println("eat both");
+      }
     }
 }
