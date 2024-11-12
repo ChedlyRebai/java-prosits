@@ -122,10 +122,15 @@ public class Zoo {
 
         return z2;
     }
+    
 
-    public boolean addAnimal(Animal newAnimal) {
+    public boolean addAnimal(Animal newAnimal) throws ZooFullException, InvalidAgeException {
+        if (newAnimal.getAge() < 0) {
+            throw new InvalidAgeException("Animal age cannot be negative.");
+        }
+
         if (isTheAnimalIsTheSame(newAnimal)) {
-            System.out.println("noo");
+            System.out.println("Animal already exists in the zoo.");
             return false;
         }
 
@@ -133,43 +138,9 @@ public class Zoo {
             animals[newwint] = newAnimal;
             newwint++;
             return true;
+        } else {
+            throw new ZooFullException("The zoo is full. Cannot add more animals.");
         }
-        /*
-         * if (newwint < nbrCages) {
-         * animals[newwint] = newAnimal;
-         * newwint++;
-         * return true;
-         * }
-         */
-
-        return false;
-
-        /*
-         * int indies=animals.length;
-         * System.out.println("index"+indies);
-         * //System.out.println("ee"+animals[indies-1].displayAnimal());
-         * System.out.println("b"+animals.length);
-         * int newIndex=0;
-         * for(Animal animal: animals){
-         * System.out.println("new"+newIndex);
-         * if(!animal.isEmpty()){
-         * newIndex++;
-         * break;
-         * }
-         * }
-         */
-
-        // System.out.println("new"+newIndex);
-        // animals[indies]=newAnimal;
-        // System.out.println("a"+animals.length);
-        /*
-         * if(animals.length <nbrCages){
-         * int index=animals.length+1;
-         * System.out.println("index"+index);
-         * System.out.println("ee"+animals[index]);
-         * 
-         * }
-         */
     }
 
 

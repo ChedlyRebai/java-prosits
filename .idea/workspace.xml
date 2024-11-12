@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cad3b00-d762-4fd0-91ec-0a4caace493b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prosit_6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/prosit_3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Aquatic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Dolphin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Penguin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Terrestrial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/entities/Zoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_6/src/tn/esprit/gestionzoo/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/prosit_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Aquatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Dolphin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Penguin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Terrestrial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/entities/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prosit_7/src/tn/esprit/gestionzoo/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -107,7 +107,7 @@
       <workItem from="1728039320880" duration="152000" />
       <workItem from="1728414268793" duration="1769000" />
       <workItem from="1728809206641" duration="256000" />
-      <workItem from="1731439428672" duration="554000" />
+      <workItem from="1731439428672" duration="1442000" />
     </task>
     <servers />
   </component>
