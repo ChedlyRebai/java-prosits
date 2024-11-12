@@ -71,14 +71,27 @@ public class Main {
         // Prosit-5 update
         System.out.println("----------------------PROSIT-5---------------------------------");
 
-        Aquatic aquatic = new Aquatic("shark", "Shark", 5, false, "ocean");
-        System.out.println(aquatic.toString());
+        // Aquatic aquatic = new Aquatic("shark", "Shark", 5, false, "ocean");
+        // System.out.println(aquatic.toString());
 
         Dolphin dolphin = new Dolphin("dolphin", "Dolphin", 2, true, city, 10);
         System.out.println(dolphin.toString());
 
         Penguin penguin = new Penguin("penguin", "Penguin", 1, true, city, 5);
         System.out.println(penguin.toString());
+
+        // prosit_6
+       // myZoo.addAquaticAnimal(aquatic);
+
+        // Instruction 28
+        for (Animal animal : myZoo.getAnimals()) {
+            
+                if (animal != null && animal.getClass() == Aquatic.class) {
+                    Aquatic aquaticAnimal = (Aquatic) animal;
+                    aquaticAnimal.swim();
+                }
+            
+        }
 
     }
 }
