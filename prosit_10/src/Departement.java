@@ -10,9 +10,7 @@ public class Departement implements Comparable<Departement> {
         this.nbEmploye = nbEmploye;
     }
 
-    public Departement() {
-
-    }
+    public Departement() {}
 
     @Override
     public boolean equals(Object ob) {
@@ -28,10 +26,9 @@ public class Departement implements Comparable<Departement> {
         return "Departement [id=" + id + ", nom=" + nom + ", nbEmploye=" + nbEmploye + "]";
     }
 
-
     @Override
     public int compareTo(Departement o) {
-       return Integer.compare(this.id,o.getId());
+        return Integer.compare(this.id, o.getId());
     }
 
     public int getId() {
@@ -57,9 +54,5 @@ public class Departement implements Comparable<Departement> {
     public void setNbEmploye(int nbEmploye) {
         this.nbEmploye = nbEmploye;
     }
-
-    
-
-    
 
 }
