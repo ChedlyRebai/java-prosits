@@ -14,12 +14,22 @@ public class Departement implements Comparable<Departement> {
 
     @Override
     public boolean equals(Object ob) {
+        if(this == ob){
+            return true;
+        }
+
+        
+
+        if(ob == null || getClass().equals( ob.getClass())){
+            return false;
+        }
         Departement newDep = (Departement) ob;
         if (this.id == newDep.getId() && this.nom.equals(newDep.getNom())) {
             return true;
         }
         return false;
     }
+
 
     @Override
     public String toString() {
