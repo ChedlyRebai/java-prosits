@@ -10,25 +10,25 @@ public class Departement implements Comparable<Departement> {
         this.nbEmploye = nbEmploye;
     }
 
-    public Departement() {}
+    public Departement() {
+    }
 
     @Override
     public boolean equals(Object ob) {
-        if(this == ob){
+        if (this == ob) {
             return true;
         }
 
-        if(ob == null || getClass().equals( ob.getClass())){
+        if (ob == null || getClass().equals(ob.getClass())) {
             return false;
         }
-        
+
         Departement newDep = (Departement) ob;
         if (this.id == newDep.getId() && this.nom.equals(newDep.getNom())) {
             return true;
         }
         return false;
     }
-
 
     @Override
     public String toString() {
@@ -37,7 +37,13 @@ public class Departement implements Comparable<Departement> {
 
     @Override
     public int compareTo(Departement o) {
-        return Integer.compare(this.id, o.getId());
+        if (this.id > o.getId()) {
+            return 1;
+        } else if (this.id < o.getId()) {
+            return -1;
+        } else {
+            return this.nom.compareTo(o.getNom());
+        }
     }
 
     public int getId() {
