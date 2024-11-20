@@ -17,6 +17,26 @@ public class Main {
         gesDepartement.ajouterDepartement(depPhysique);
         gesDepartement.ajouterDepartement(depInformatique);
 
+        if (gesDepartement.rechercherDepartement(depMathematique)) {
+            System.out.println("Department exist \n");
+        } else {
+            System.out.println("Department n'existe pas \n");
+        }
+
+        String nomDep = "Informatique";
+        if (gesDepartement.rechercherDepartement(nomDep)) {
+            System.out.println("department " + nomDep + " exist \n");
+        } else {
+            System.out.println("department " + nomDep + " n'exist pas \n");        
+        }
+
+
+        gesDepartement.supprimerDepartement(depMathematique);
+
+        gesDepartement.trierDepartementById();
+        
+
+
         gesDepartement.displayDepartement();
 
     }

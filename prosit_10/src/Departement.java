@@ -1,5 +1,5 @@
 
-public class Departement {
+public class Departement implements Comparable<Departement> {
     private int id;
     private String nom;
     private int nbEmploye;
@@ -28,6 +28,12 @@ public class Departement {
         return "Departement [id=" + id + ", nom=" + nom + ", nbEmploye=" + nbEmploye + "]";
     }
 
+
+    @Override
+    public int compareTo(Departement o) {
+       return Integer.compare(this.id,o.getId());
+    }
+
     public int getId() {
         return id;
     }
@@ -51,5 +57,9 @@ public class Departement {
     public void setNbEmploye(int nbEmploye) {
         this.nbEmploye = nbEmploye;
     }
+
+    
+
+    
 
 }

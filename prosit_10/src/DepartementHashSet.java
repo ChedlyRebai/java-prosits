@@ -14,10 +14,14 @@ public class DepartementHashSet implements IDepartement {
 
     @Override
     public boolean rechercherDepartement(String nom) {
-        if (this.Departements.contains(nom)) {
-            return true;
+        for (Departement departement : Departements) {
+            if(nom.equals(departement.getNom())){
+                return true;
+             }
         }
+
         return false;
+    
     }
 
     @Override
@@ -29,6 +33,7 @@ public class DepartementHashSet implements IDepartement {
         return false;
     }
 
+    
     @Override
     public void supprimerDepartement(Object t) {
         this.Departements.remove(t);
@@ -50,8 +55,4 @@ public class DepartementHashSet implements IDepartement {
         return newSet;
     }
 
-
-
-
-    
 }
