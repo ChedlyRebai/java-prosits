@@ -12,8 +12,6 @@ public class Main {
         Departement depGeologie = new Departement(5, "Geologie", 35);
 
 
-
-
         gesDepartement.ajouterDepartement(depChimie);
         gesDepartement.ajouterDepartement(depMathematique);
         gesDepartement.ajouterDepartement(depBiologie);

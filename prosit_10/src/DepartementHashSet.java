@@ -35,17 +35,16 @@ public class DepartementHashSet implements IDepartement<Departement> {
     public void supprimerDepartement(Departement t) {
         if (this.Departements.contains(t)) {
             if (this.Departements.remove(t)) {
-                System.out.println("department " + t.getNom() + " supprimer avec succes");
+                System.out.println("department " + t.getNom() + " supprimer avec succes \n");
             }
         } else {
-            System.out.println("Element n'exist pas");
+            System.out.println("Element n'exist pas \n");
         }
-
     }
+
 
     @Override
     public void displayDepartement() {
-
         if (this.Departements.isEmpty()) {
             System.out.println("Department est vide");
         } else {
