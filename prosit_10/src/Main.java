@@ -35,15 +35,15 @@ public class Main {
             System.out.println("department " + nomDep + " n'exist pas \n");
         }
 
-        gesDepartement.supprimerDepartement(depMathematique);
-        
-        
+       
         System.out.println(" New treeSet :\n");
         TreeSet<Departement> newDepartments= gesDepartement.trierDepartementById();
         newDepartments.forEach((element)->{
             System.out.println(element);
         });
 
+        gesDepartement.supprimerDepartement(depMathematique);
+        
         
 
     }
