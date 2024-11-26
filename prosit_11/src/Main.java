@@ -46,5 +46,16 @@ public class Main {
         
         
 
+        Employee e1=new Employee(0, "chedly", "informatique", "informatique", 12);
+        Employee e2 = new Employee(1, "malek", "hmidi", "Physique", 5);
+        Employee e3 = new Employee(2, "amal", "hamdi", "Chimie", 8);
+        Employee E4 = new Employee(3, "houssem", "hammami", "Biologie", 3);
+
+
+        AffectationHashMap Affectation=new AffectationHashMap();
+        Affectation.ajouterEmployeDepartement(e1, depGeologie);
+        Affectation.ajouterEmployeDepartement(e3, depBiologie);
+        Affectation.afficherEmployesEtDepartements();
+
     }
 }
