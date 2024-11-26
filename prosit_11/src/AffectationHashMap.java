@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.Map;
 
 public class AffectationHashMap {
@@ -7,5 +8,9 @@ public class AffectationHashMap {
         this.affectation.put(e, d);
     }
 
-    
+    public void afficherEmployesEtDepartements(){
+        for(Map.Entry<Employee, Departement>  entry :affectation.entrySet() ){
+            System.out.println("key "+entry.getKey() + " value :"+entry.getValue());
+        }
+    }
 }
