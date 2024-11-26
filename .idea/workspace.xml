@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cad3b00-d762-4fd0-91ec-0a4caace493b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prosit_11/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/prosit_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prosit_11/src/ZooMangement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7cad3b00-d762-4fd0-91ec-0a4caace493b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +98,7 @@
       <workItem from="1732547820432" duration="15000" />
       <workItem from="1732548797360" duration="12000" />
       <workItem from="1732650922115" duration="94000" />
+      <workItem from="1732660101738" duration="546000" />
     </task>
     <servers />
   </component>
