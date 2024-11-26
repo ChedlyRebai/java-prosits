@@ -1,25 +1,50 @@
-import java.util.Scanner;
+import java.util.TreeSet;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //Instruction 1
-        //int nbrCages=20;
-        //String zooName="my zoo";
-       // System.out.println(String.format("%s comporte %d cages ", zooName,nbrCages));
-        //result: my zoo comporte 20 cages
+        DepartementHashSet gesDepartement = new DepartementHashSet();
 
-        //Instruction 2
-        int nbrCages;
-        String zooName;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Entrez le nom du zoo");
-        zooName=sc.nextLine();
+        Departement depInformatique = new Departement(1, "Informatique", 10);
+        Departement depPhysique = new Departement(2, "Physique", 20);
+        Departement depChimie = new Departement(3, "Chimie", 25);
+        Departement depBiologie = new Departement(4, "Biologie", 30);
+        Departement depMathematique = new Departement(6, "Mathematiques", 15);
+        Departement depGeologie = new Departement(5, "Geologie", 35);
 
-        System.out.println("Entrez le nombre de cages");
-        nbrCages=sc.nextInt();
 
-        System.out.println(String.format("%s comporte %d cages ", zooName,nbrCages));
+        gesDepartement.ajouterDepartement(depChimie);
+        gesDepartement.ajouterDepartement(depMathematique);
+        gesDepartement.ajouterDepartement(depBiologie);
+        gesDepartement.ajouterDepartement(depGeologie);
+        gesDepartement.ajouterDepartement(depPhysique);
+        gesDepartement.ajouterDepartement(depInformatique);
+        gesDepartement.displayDepartement();
+
+
+
+        if (gesDepartement.rechercherDepartement(depMathematique)) {
+            System.out.println("Department exist \n");
+        } else {
+            System.out.println("Department n'existe pas \n");
+        }
+
+        String nomDep = "Informatique";
+        if (gesDepartement.rechercherDepartement(nomDep)) {
+            System.out.println("department " + nomDep + " exist \n");
+        } else {
+            System.out.println("department " + nomDep + " n'exist pas \n");
+        }
+
+       
+        System.out.println(" New treeSet :\n");
+        TreeSet<Departement> newDepartments= gesDepartement.trierDepartementById();
+        newDepartments.forEach((element)->{
+            System.out.println(element);
+        });
+
+        gesDepartement.supprimerDepartement(depMathematique);
+        
+        
+
     }
 }
