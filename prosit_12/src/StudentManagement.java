@@ -18,35 +18,36 @@ public class StudentManagement implements Management {
     @Override
     public void displayStudentsByFilter(List<Student> students, Predicate<Student> pre, Consumer<Student> con) {
        for (Student student : students) {
-
-        System.out.println(pre.test(student));
-        
+            if(pre.test(student)){
+                con.accept(student);
+            }
        }
        
     }
 
     @Override
     public String returnStudentsNames(List<Student> students, Function<Student, String> fun) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'returnStudentsNames'");
+        String names="";
+        for (Student student : students) {
+            fun.apply(student);
+        }
+        return names;
     }
 
     @Override
     public Student createStudent(Supplier<Student> sup) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createStudent'");
+       return sup.get();
     }
 
     @Override
     public List<Student> sortStudentsById(List<Student> students, Comparator<Student> com) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sortStudentsById'");
+        students.sort(com);
+        return students;
     }
 
     @Override
     public Stream<Student> convertToStream(List<Student> students) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'convertToStream'");
+        return students.stream();
     }
 
 }
