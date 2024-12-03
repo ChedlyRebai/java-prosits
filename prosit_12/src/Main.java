@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +29,13 @@ public class Main {
         // String names = studentMangement.returnStudentsNames(studentList, names);
         // System.out.println(names);
         
-        
+        Comparator<Student>  compareById=Comparator.comparingInt(Student::getId);
+        List<Student> sorStudents =studentMangement.sortStudentsById(studentList, compareById);
+        sorStudents.forEach(System.out::println);
+
+
+        Stream<Student> studentStream = studentMangement.convertToStream(studentList);
+        studentStream.forEach(System.out::println);
+
     }
 }
