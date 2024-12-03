@@ -10,8 +10,9 @@ public class StudentManagement implements Management {
 
     @Override
     public void displayStudents(List<Student> students, Consumer<Student> con) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'displayStudents'");
+        for (Student student : students) {
+            con.accept(student);
+        }
     }
 
     @Override
@@ -43,5 +44,5 @@ public class StudentManagement implements Management {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'convertToStream'");
     }
-    
+
 }
