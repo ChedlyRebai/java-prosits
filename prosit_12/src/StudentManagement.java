@@ -22,7 +22,6 @@ public class StudentManagement implements Management {
                 con.accept(student);
             }
        }
-       
     }
 
     @Override
