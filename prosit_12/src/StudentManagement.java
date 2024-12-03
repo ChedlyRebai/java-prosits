@@ -17,8 +17,12 @@ public class StudentManagement implements Management {
 
     @Override
     public void displayStudentsByFilter(List<Student> students, Predicate<Student> pre, Consumer<Student> con) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'displayStudentsByFilter'");
+       for (Student student : students) {
+
+        System.out.println(pre.test(student));
+        
+       }
+       
     }
 
     @Override
