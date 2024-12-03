@@ -26,11 +26,11 @@ public class StudentManagement implements Management {
 
     @Override
     public String returnStudentsNames(List<Student> students, Function<Student, String> fun) {
-        String names="";
+        StringBuilder names = new StringBuilder();
         for (Student student : students) {
-            names += fun.apply(student);
+            names.append(fun.apply(student));
         }
-        return names;
+        return names.toString();
     }
 
     @Override

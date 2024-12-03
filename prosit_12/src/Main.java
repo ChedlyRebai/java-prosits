@@ -28,7 +28,8 @@ public class Main {
 
         System.out.println("\nstudent names:");
         Function<Student, String> names = Student::getNom;
-        String names = studentMangement.returnStudentsNames(studentList, names);
+        String studentNames = studentMangement.returnStudentsNames(studentList, names);
+        System.out.println(studentNames);
         System.out.println(names);
 
 
