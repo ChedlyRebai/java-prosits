@@ -28,7 +28,7 @@ public class StudentManagement implements Management {
     public String returnStudentsNames(List<Student> students, Function<Student, String> fun) {
         String names="";
         for (Student student : students) {
-            fun.apply(student);
+            names += fun.apply(student);
         }
         return names;
     }
