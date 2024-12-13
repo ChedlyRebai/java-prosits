@@ -80,7 +80,7 @@ public class Level2 {
         /* TO DO 8: Afficher le deuxième enseignant dont le nom commence avec s */
         teachers.stream()
                 .filter(teacher -> teacher.getName().toLowerCase().startsWith("s"))
-                .skip(1) // Ignorer le premier
+                .skip(1) 
                 .findFirst()
                 .ifPresent(
                         teacher -> System.out.println("Deuxième enseignant dont le nom commence par 's': " + teacher));

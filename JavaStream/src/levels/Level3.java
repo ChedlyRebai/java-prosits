@@ -49,7 +49,7 @@ public class Level3 {
                 .collect(Collectors.toMap(
                         Teacher::getSalary,
                         Teacher::getName,
-                        (name1, name2) -> name1 + ", " + name2 // Gestion des salaires égaux
+                        (name1, name2) -> name1 + ", " + name2 
                 ));
 
         System.out.println("Map regroupant les noms des enseignants par salaire : " + map1);
