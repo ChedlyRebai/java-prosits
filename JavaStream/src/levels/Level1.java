@@ -11,10 +11,7 @@ public class Level1 {
 
     public static void main(String[] args) {
         List<Teacher> teachers = Data.employees();
-        teachers.add(new Teacher("chedly", Subject.BLOCKCHAIN, 0));
-        teachers.add(new Teacher("karim ", Subject.IOS, 102));
-        teachers.add(new Teacher("mohamed", Subject.PTM, 23));
-        teachers.add(new Teacher("nour", Subject.UNITY, 78));
+      
         /*
          * TO DO 1: Afficher tous les enseignants
          */

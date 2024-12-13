@@ -1,6 +1,4 @@
 package levels;
-
-import models.Subject;
 import models.Teacher;
 import utils.Data;
 
@@ -12,10 +10,7 @@ public class Level2 {
 
     public static void main(String[] args) {
         List<Teacher> teachers = Data.employees();
-        teachers.add(new Teacher("chedly", Subject.BLOCKCHAIN, 0));
-        teachers.add(new Teacher("karim ", Subject.IOS, 102));
-        teachers.add(new Teacher("mohamed", Subject.PTM, 23));
-        teachers.add(new Teacher("nour", Subject.UNITY, 78));
+     
         /* TO DO 1: Retourner le nombre des enseignants dont le nom commence avec s */
         long nbr = teachers.stream()
                 .filter(teacher -> teacher.getName().toLowerCase().startsWith("s"))

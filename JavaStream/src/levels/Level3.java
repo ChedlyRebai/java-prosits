@@ -1,6 +1,4 @@
 package levels;
-
-import models.Subject;
 import models.Teacher;
 import utils.Data;
 
@@ -11,10 +9,7 @@ public class Level3 {
 
     public static void main(String[] args) {
         List<Teacher> teachers = Data.employees();
-        teachers.add(new Teacher("chedly", Subject.JAVA, 1211));
-        teachers.add(new Teacher("karim", Subject.PTM, 12441));
-        teachers.add(new Teacher("MOUHAMED", Subject.FLUTTER, 12431));
-        teachers.add(new Teacher("hichem", Subject.ANDROID, 11431));
+
         /*
          * TO DO 1: Retourner une chaine de caractère qui contient tous les noms des
          * enseignants en majuscule séparés par #
