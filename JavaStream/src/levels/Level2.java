@@ -1,4 +1,5 @@
 package levels;
+import models.Subject;
 import models.Teacher;
 import utils.Data;
 
@@ -13,7 +14,7 @@ public class Level2 {
      
         /* TO DO 1: Retourner le nombre des enseignants dont le nom commence avec s */
         long nbr = teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("s"))
+                .filter(teacher -> teacher.getName().startsWith("s"))
                 .count();
         System.out.println("Nombre des enseignants dont le nom commence par 's': " + nbr);
 
@@ -22,7 +23,7 @@ public class Level2 {
          * (hint: mapToInt)
          */
         long sum = teachers.stream()
-                .filter(teacher -> teacher.getSubject().toString().equalsIgnoreCase("Flutter"))
+                .filter(teacher -> teacher.getSubject().equals(Subject.FLUTTER))
                 .mapToLong(Teacher::getSalary)
                 .sum();
         System.out.println("Somme des salaires des enseignants Flutter: " + sum);
@@ -32,7 +33,7 @@ public class Level2 {
          * commence avec a
          */
         double average = teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("a"))
+                .filter(teacher -> teacher.getName().startsWith("a"))
                 .mapToDouble(Teacher::getSalary)
                 .average()
                 .orElse(0);
@@ -40,13 +41,13 @@ public class Level2 {
 
         /* TO DO 4: Retourner la liste des enseignants dont le nom commence par f */
         List<Teacher> teachers1 = teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("f"))
+                .filter(teacher -> teacher.getName().startsWith("f"))
                 .collect(Collectors.toList());
         System.out.println("Enseignants dont le nom commence par 'f': " + teachers1);
 
         /* TO DO 5: Retourner la liste des enseignants dont le nom commence par s */
         List<Teacher> teachers2 = teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("s"))
+                .filter(teacher -> teacher.getName().startsWith("s"))
                 .collect(Collectors.toList());
         System.out.println("Enseignants dont le nom commence par 's': " + teachers2);
 
@@ -64,22 +65,22 @@ public class Level2 {
          */
         /* First way */
         Optional<Teacher> firstUnity1 = teachers.stream()
-                .filter(teacher -> teacher.getSubject().toString().equalsIgnoreCase("Unity"))
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("g"))
+                .filter(teacher -> teacher.getSubject().equals(Subject.UNITY))
+                .filter(teacher -> teacher.getName().startsWith("g"))
                 .findFirst();
         firstUnity1.ifPresent(teacher -> System.out.println("Premier enseignant Unity (manière 1): " + teacher));
 
         /* Second way */
         Teacher firstUnity2 = teachers.stream()
-                .filter(teacher -> teacher.getSubject().toString().equalsIgnoreCase("Unity"))
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("g"))
+                .filter(teacher -> teacher.getSubject().equals(Subject.UNITY))
+                .filter(teacher -> teacher.getName().startsWith("g"))
                 .findFirst()
                 .orElse(null);
         System.out.println("Premier enseignant Unity (manière 2): " + firstUnity2);
 
         /* TO DO 8: Afficher le deuxième enseignant dont le nom commence avec s */
         teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("s"))
+                .filter(teacher -> teacher.getName().startsWith("s"))
                 .skip(1) 
                 .findFirst()
                 .ifPresent(

@@ -21,7 +21,7 @@ public class Level1 {
          * TO DO 2: Afficher les enseignants dont le nom commence par la lettre n
          */
         teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("n"))
+                .filter(teacher -> teacher.getName().startsWith("n"))
                 .forEach(teacher -> System.out.println(teacher.getName()));
 
         /*
@@ -29,7 +29,7 @@ public class Level1 {
          * salaire > 100000
          */
         teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("n"))
+                .filter(teacher -> teacher.getName().startsWith("n"))
                 .filter(teacher -> teacher.getSalary() > 100000)
                 .forEach(teacher -> System.out.println(teacher.getName() + " " + teacher.getSalary()));
 
@@ -64,7 +64,7 @@ public class Level1 {
          * afficher celui qui a le salaire le plus élevé
          */
         teachers.stream()
-                .filter(teacher -> teacher.getName().toLowerCase().startsWith("m"))
+                .filter(teacher -> teacher.getName().startsWith("m"))
                 .peek(teacher -> teacher.setSalary(teacher.getSalary() + 200))
                 .max(Comparator.comparingDouble(Teacher::getSalary))
                 .ifPresent(teacher -> System.out.println("Enseignant avec le salaire le plus élevé : "

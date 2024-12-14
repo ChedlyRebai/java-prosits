@@ -1,4 +1,5 @@
 package levels;
+import models.Subject;
 import models.Teacher;
 import utils.Data;
 
@@ -22,7 +23,7 @@ public class Level3 {
 
         /* TO DO 2: Retourner un set d'enseignants Java dont le salaire > 80000 */
         Set<Teacher> teachers1 = teachers.stream()
-                .filter(teacher -> teacher.getSubject().toString().equalsIgnoreCase("Java"))
+                .filter(teacher -> teacher.getSubject().equals(Subject.JAVA))
                 .filter(teacher -> teacher.getSalary() > 80000)
                 .collect(Collectors.toSet());
         System.out.println("Enseignants Java avec salaire > 80000 : " + teachers1);
